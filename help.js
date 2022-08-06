@@ -6,7 +6,7 @@ moment.tz.setDefault("Asia/Jakarta").locale("id");
 let dt = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
 const ucapanWaktu = "Selamat "+dt.charAt(0).toUpperCase() + dt.slice(1)
 
-const { getMoney } = require("./lib/server/saldo.js");
+const { getMoney } = require("./lib/server/saldo");
 let setting = JSON.parse(fs.readFileSync('./config.json'))
 let hitbot = JSON.parse(fs.readFileSync('./database/dashboard/userhit.json'));
 let pendaftar = JSON.parse(fs.readFileSync('./database/user.json'))
