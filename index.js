@@ -1899,7 +1899,10 @@ let textDeposit =`*─ 「 DEPOSIT USER 」 ─*
 *_Saldo Tidak Bisa Di Konfirmasi_*
 
 *LIST PAYMENT 💵*
+ • _*Ovo = 085789004732*_
  • _*Dana = 085789004732*_
+ • _*Linkaja = 085789004732*_
+ • _*Seabank = 901194587823*_
  • _*Qris = Scan Di Atas*_
 
 *INFO DETAIL 🏧*
