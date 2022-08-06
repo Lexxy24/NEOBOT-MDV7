@@ -743,7 +743,23 @@ return lexxy.updateBlockStatus(sender, 'block')
      
 
 // Text Nya
-const wiwik = `${menuall(sender, prefix, pushname, ucapanWaktu, tanggal, jam, isOwner)}`
+const wiwik = `*───[ ${setting.botName} ]─────*
+
+_*Selamat ${ucapanWaktu} ${pushname}*_
+
+*INFO SERVER*
+ Library : *Baileys-MD*.
+ Global Hit : ${hitbot.length}
+ Total Pengguna : ${pendaftar.length}
+ Waktu : ${tanggal}
+ Jam : ${jam}
+
+ Name : ${pushname}
+ Tag : @${sender.split("@")[0]}
+ Status : ${isOwner ? 'Owner':'User'}
+ Saldo User : Rp.${getMoney(sender, balance)}
+ 
+${menuall(sender, prefix, pushname, ucapanWaktu, tanggal, jam, isOwner)}`
 
  const MyData = (satu, dua) => {
 let position = false

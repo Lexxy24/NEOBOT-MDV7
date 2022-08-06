@@ -13,23 +13,7 @@ let pendaftar = JSON.parse(fs.readFileSync('./database/user.json'))
 let balance = JSON.parse(fs.readFileSync('./database/deposit/saldo.json'));
 
 exports.menuall = (sender, prefix, pushname, ucapanWaktu, tanggal, jam, isOwner) => {
-return `*───[ ${setting.botName} ]─────*
-
-_*Selamat ${ucapanWaktu} ${pushname}*_
-
-*INFO SERVER*
- Library : *Baileys-MD*.
- Global Hit : ${hitbot.length}
- Total Pengguna : ${pendaftar.length}
- Waktu : ${tanggal}
- Jam : ${jam}
-
- Name : ${pushname}
- Tag : @${sender.split("@")[0]}
- Status : ${isOwner ? 'Owner':'User'}
- Saldo User : Rp.${getMoney(sender, balance)}
- 
-*OTHERS*
+return `*OTHERS*
  • bot
  • wame
 
