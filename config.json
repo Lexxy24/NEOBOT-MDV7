@@ -15,14 +15,14 @@
     "textBarisDonate3": "Gopay : 08xxxxxxxxx",
     "textBarisDonate4": "Pulsa : 0857-8900-4732",
   
-    "ButtonTextMenu1": "Youtube Owner",
-    "ButtonTextMenu2": "Group WhatsApp",
+    "ButtonTextMenu1": "Youtube",
+    "ButtonTextMenu2": "Rest Api",
     "quickReplyButton3": "Rules",
     "quickReplyButton4": "Donasi",
     "quickReplyButton5": "Dashboard",
   
     "ButtonMenuLink1": "https://youtube.com/channel/UCLd-bhT8Dqq9PjGc6bWUVyg",
-    "ButtonMenuLink2": "https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG",
+    "ButtonMenuLink2": "https://api-lexxy-official.herokuapp.com",
     "displayTextMenu3": "rules",
     "displayTextMenu4": "donasi",
     "displayTextMenu5": "dashboard",

@@ -1292,12 +1292,6 @@ var tih = await fetchJson(`https://fatiharridho.herokuapp.com/api/random/wallpap
 lexxy.sendMessage(from, { image: { url: tih.result }, caption: 'Done!!' }, {quoted:msg})
 }
 break
-case prefix+'game':{
-reply(mess.wait)
-var tih = await fetchJson(`https://fatiharridho.herokuapp.com/api/random/wallpaper/Game`)
-lexxy.sendMessage(from, { image: { url: tih.result }, caption: 'Done!!' }, {quoted:msg})
-}
-break
 case prefix+'islamic':{
 reply(mess.wait)
 var tih = await fetchJson(`https://fatiharridho.herokuapp.com/api/random/wallpaper/Islamic`)
@@ -4329,6 +4323,50 @@ case prefix+'tafsirsurah': {
 
 
 // BY RIMURUBOTZ
+case prefix+'games':{
+let textGaming =`*INFO DATA USER*
+ Nama : ${pushname}
+ Tag : ${sender.split("@")[0]}
+ Karakter : ${MyData("karakter", sender)}
+ Uang : ${MyData("uang", sender)}
+ Energi : ${MyData("energi",sender)}
+ Medali : ${MyData("medali",sender)}
+ Exp : ${MyData("exp",sender)}
+
+*GAMES MENU*
+ • ${prefix}judi
+ • ${prefix}sell
+ • ${prefix}claim
+ • ${prefix}myexp
+ • ${prefix}myuang
+ • ${prefix}mymedali
+ • ${prefix}myenergi
+ • ${prefix}mykarakter
+ • ${prefix}myuang
+ • ${prefix}mymedali
+ • ${prefix}buykarakter
+ • ${prefix}buyenergi
+ • ${prefix}theworld
+
+*FUN ASAH-OTAK*
+ • ${prefix}susunkata
+ • ${prefix}caklontong
+ • ${prefix}tebakkata
+ • ${prefix}siapakahaku
+ • ${prefix}tebaklirik
+ • ${prefix}tekateki
+ • ${prefix}tebakkalimat
+ • ${prefix}tebakgambar
+ • ${prefix}tebaktebakan
+ • ${prefix}tebakgame`
+ 
+ var media = await reSize(setting.pathimg, 300, 200)
+lexxy.sendMessage(from, { caption: textGaming, location: { jpegThumbnail: media }, templateButtons: buttonsGames, footer: footer, mentions: [sender] }, { quoted: msg })
+}
+addCmd(command.slice(1), 1, commund)
+addHit(sender, command)
+break
+
 case prefix+'mykarakter':
 if (MyData("id", sender) !== sender) return textOverlay(pushname, "Anda belum terdaftar di database bot, silahkan daftar terlebih dahulu, gunakan command #daftar", "Daftar dulu ya kak:3");
 if (MyData("karakter", sender) == false) return textOverlay(pushname + " [ false ]", "Maaf anda belum memiliki karakter, silahkan beli karakter terlebih dahulu di #buykarakter", `No : ${sender.split("@")[0]}`);
@@ -4336,7 +4374,7 @@ textOverlay(pushname, `Karakter anda : ${MyData("karakter", sender)}`, `${MyData
 break
 case prefix+'daftar':
 if (MyData("id", sender) == sender) return textOverlay(pushname, "Anda Sudah terdaftar sebelumnya", `No : ${sender.split("@")[0]}`);
-textOverlay("SUKSES TERDAFTAR", "Sukses Terdaftar, Subscribe Yt saya ya banh :3\nhttps://youtube.com/channel/UCLd-bhT8Dqq9PjGc6bWUVyg\nSilahkan Ketik #game", `No : ${sender.split("@")[0]}`);
+textOverlay("SUKSES TERDAFTAR", "Sukses Terdaftar, Subscribe Yt saya ya banh :3\nhttps://youtube.com/channel/UCLd-bhT8Dqq9PjGc6bWUVyg\nSilahkan Ketik #games", `No : ${sender.split("@")[0]}`);
 addLogin({id: sender, uang: 1000, exp:1, level:1, karakter:false, energi:100, medali:1000, claim:1})
 break
 case prefix+'buykarakter':
