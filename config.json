@@ -1,0 +1,36 @@
+{
+    "ownerNumber": "6283834558105@s.whatsapp.net", 
+    "ownerName": "Lexxy Official", 
+    "botName": "NEOBOT-STORE",
+    "footer": "© BOTMD | 2022", 
+    "sessionName": "session", 
+    "pathimg": "./media/logo.jpg", 
+    "pathqris": "./media/qris.jpg",
+    "group": "https://chat.whatsapp.com/DHf4mb8QnmC5zynElmG2tG",
+    "yootube": "https://youtube.com/channel/UCLd-bhT8Dqq9PjGc6bWUVyg",
+     
+    "QrisAllPay": "https://telegra.ph/file/d015def9028eb1c0a156b.jpg",
+    "textBarisDonate1": "Dana : 0857-8900-4732",
+    "textBarisDonate2": "Ovo : 0857-8900-4732",
+    "textBarisDonate3": "Gopay : 08xxxxxxxxx",
+    "textBarisDonate4": "Pulsa : 0857-8900-4732",
+  
+    "ButtonTextMenu1": "Youtube Owner",
+    "ButtonTextMenu2": "Group WhatsApp",
+    "quickReplyButton3": "Rules",
+    "quickReplyButton4": "Donasi",
+    "quickReplyButton5": "Dashboard",
+  
+    "ButtonMenuLink1": "https://youtube.com/channel/UCLd-bhT8Dqq9PjGc6bWUVyg",
+    "ButtonMenuLink2": "https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG",
+    "displayTextMenu3": "rules",
+    "displayTextMenu4": "donasi",
+    "displayTextMenu5": "dashboard",
+    "limitCount": 100,
+    "limitGame": 35,
+    "gamewaktu": 90,
+    "sticker": {
+        "packname": "© Store",
+        "author": "Lexxy Official"
+    }
+}
